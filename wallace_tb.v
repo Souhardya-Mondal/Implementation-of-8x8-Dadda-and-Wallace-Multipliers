@@ -8,6 +8,11 @@ begin
 $dumpfile("1.vcd");
 $dumpvars(0,test);
 $monitor($time," a=%h , b=%h , result=%h" , a,b,result);
-#5 a=8'h10; b=8'h42;
+#500 a=8'h10; b=8'h42;
+#500 a=8'h12; b=8'h42;
+#500 a=8'h18; b=8'h42;
+#500 a=8'h20; b=8'h12;
+#500 a=8'h12; b=8'h72;
+#500 a=8'h28; b=8'h52;
 end
 endmodule
